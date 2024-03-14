@@ -6,12 +6,14 @@ import Hero from './Components/Hero/Hero'
 import Projects from './Components/Projects/Projects'
 import App from './App'
 import Contactme from './Components/Contactme/Contactme'
+import Skills from './Components/Skills/Skills'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
-      <Route path='/' element={<Hero />} /> 
+      <Route path='' element={<Hero />} /> 
       <Route path='contactme' element={<Contactme />} />
+      <Route path='skills' element={<Skills />} />
       <Route path='projects' element={<Projects />} />
     </Route>
   )

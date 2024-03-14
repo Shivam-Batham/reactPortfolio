@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Introduction() {
+function Skills() {
   return (
     <div>
-      
+      Skills
     </div>
   )
 }
 
-export default Introduction
+export default Skills
