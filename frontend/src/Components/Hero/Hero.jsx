@@ -2,15 +2,16 @@ import React from 'react'
 import "./hero.css"
 function Hero() {
   return (
-    <section id ="hero">
+    <div id ="hero">
       <div className='imgContainer'>
         {/* <img src='red.jpeg'/> */}
       </div>
       <div className='heroText'>
-        <h1>Shivam Batham</h1>
+      I am self tought developer with a strong background in JavaScript, C++, React.js, Express.js, CSS, MongoDB, Node.js, Git. Skilled in designing and implementing and passion for creating dynamic online experience.
       </div>
-    </section>
+      
+    </div>
   )
 }
 
-export default Hero;
+export default Hero; 

@@ -10,7 +10,7 @@ import Contactme from './Components/Contactme/Contactme'
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
-      <Route path='home' element={<Hero />} /> 
+      <Route path='/' element={<Hero />} /> 
       <Route path='contactme' element={<Contactme />} />
       <Route path='projects' element={<Projects />} />
     </Route>

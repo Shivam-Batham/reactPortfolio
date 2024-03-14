@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -5,20 +9,14 @@
 }
 
 body {
-  border: 2px solid red;
-  box-sizing: border-box;
-  margin: 0;
-  background-image: url("./../public/bg.jpg") ;
+
+  background-image: url("bg.jpg") ;
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh; 
-  /* 
-  display: flex;
-  width: 100%;
-  place-items: center;
-   */
+  
 }
 
 

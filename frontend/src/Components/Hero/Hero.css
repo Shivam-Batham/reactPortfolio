@@ -1,7 +1,10 @@
 #hero{
-    border: 2px solid white;
-    /* margin: 0px;
-    padding: 0px; */
-    color: aliceblue;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    margin: 5px;
+    min-height: 600px;
+    color: white;
     display: flex;
+    background-color: rgba(35, 129, 187, 0.4);
+   
 }
