@@ -1,5 +1,6 @@
 import React from "react";
 import {} from "@heroicons/react/24/solid";
+import Projects from "../Projects/Projects";
 
 function Hero() {
   const skills = [
@@ -249,8 +250,6 @@ function Hero() {
             <br />
             With expertise in building sleek and responsive user interfaces!
           </p>
-          <button className="p-2 border rounded-md m-2">Hire me</button>
-          <button className="p-2 border rounded-md">Download CV</button>
         </div>
 
         <div className=" border rounded-md sm:col-span-4 p-2 mb-2">
@@ -271,7 +270,7 @@ function Hero() {
           </ul>
         </div>
       </div>
-      <div className="border rounded-md sm:col-span-8">picture</div>
+      <div className="border rounded-md sm:col-span-8">{<Projects/>}</div>
     </div>
   );
 }

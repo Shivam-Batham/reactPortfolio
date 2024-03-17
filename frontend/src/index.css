@@ -9,14 +9,8 @@
 }
 
 body {
-
-  background-image: url("bg.jpg") ;
-  background-size: cover;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("bg.jpg");
   min-height: 100vh; 
-  
 }
 
 
