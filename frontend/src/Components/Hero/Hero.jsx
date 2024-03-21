@@ -4,6 +4,7 @@ import ProjectsContainer from "../Projects/ProjectsContainer";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Link } from "react-router-dom";
+import GetInTouch from "../Contactme/GetInTouch";
 
 function Hero() {
   const skills = [
@@ -251,23 +252,24 @@ function Hero() {
     },
   ];
 
+  const bgLight = "bg-[#ace0f9]"
+  const bgDark = "bg-[#1b1a1a]"
   return (
-    <div className="backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2">
+    <div className="  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2">
       <div className=" sm:col-span-4">
-        <div className=" border rounded-md sm:col-span-4 p-2 mb-2">
+        <div className={`bg-[#8d28df]  rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="font-bold text-2xl border-b text-amber-200">
-            Brief about of me
+            Brief about me
           </h1>
           <p>Hi there, Welcome to My Space.</p>
-          <p>I'm Shivam batham, A Full-Stack Engineer</p>
-          <p>
-            Specialize in crafting dynamics immersive cross-plateform web
+          <p>I'm <b>Shivam batham,</b>  A Full-Stack Engineer
+            specialize in crafting dynamics immersive cross-plateform web
             applications.
-            <br />
+         
             With expertise in building sleek and responsive user interfaces!
           </p>
         </div>
-        <div className=" border rounded-md sm:col-span-4 p-2 mb-2">
+        <div className={`${bgDark} rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="text-2xl font-bold border-b text-green-400">
             My Tech Stacks
           </h1>
@@ -283,15 +285,15 @@ function Hero() {
         <div>
           <div className=" sm:col-span-4 ">
             <div className="grid grid-cols-2 gap-2 ">
-              <div className="bg-sky-950 col-span-1 p-2  rounded-md text-center">
-                <h2 className="text-xl font-bold   text-sky-400">
+              <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
+                <h2 className="text-xl font-bold  ">
                   Years of Experience
                 </h2>
                 <hr  />
                 <p className=" text-8xl font-bold rounded-md ">1</p>
               </div>
-              <div className="col-span-1 p-2  rounded-md text-center bg-sky-950">
-                <h2 className="text-xl font-bold text-start ml-2 text-sky-400">
+              <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
+                <h2 className="text-xl font-bold text-start ml-2 ">
                   CV
                 </h2>
                 <hr />
@@ -310,13 +312,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className="p-2 bg-sky-950 rounded-md sm:col-span-8">
+      <div className={`p-2 ${bgDark} rounded-md sm:col-span-8`}>
         {<ProjectsContainer />}
       </div>
-      <div className="bg-sky-950 p-2 rounded-md sm:col-span-4">
+      <div className= {`p-2 ${bgDark} rounded-md sm:col-span-4`}>
         {<Experience />}
       </div>
-      <div className="p-2 border rounded-md sm:col-span-8">{<Education />}</div>
+      <div className={`p-2 ${bgDark} rounded-md sm:col-span-4`}>{<Education />}</div>
+      <div className={`p-2 ${bgDark} rounded-md sm:col-span-4`}>{<GetInTouch/>}</div>
     </div>
   );
 }

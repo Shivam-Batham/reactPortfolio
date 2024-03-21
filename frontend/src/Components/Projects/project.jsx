@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function project() {
   const [teckStack,setTeckState] = useState(["react", "Express","MongoDB","Node.Js"])
-
+  const bgcolorDark = "bg-[#3d3a3a]"
   return (
     <div>
       <div>
@@ -16,8 +16,8 @@ function project() {
         <hr />
 
         <div
-          className=" mt-2
-         rounded-md sm:bg-sky-600 bg-sky-700 w-[95%] m-auto p-2"
+          className={`${bgcolorDark} mt-2  rounded-md  w-[95%] m-auto p-2`}
+
         >
           <div className="flex place-content-between">
             <h2>Instant Quiz</h2>

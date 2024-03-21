@@ -1,11 +1,12 @@
 import React from "react";
 
 function Experience() {
+  const bgcolorDark = "bg-[#3d3a3a]"
   return (
     <div className="">
       <h2> My Experiences</h2>
       <hr />
-      <div className="bg-sky-900 w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2">
+      <div className={`${bgcolorDark} w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2`}>
         <div className="text-xs">
             <p className="m-2">feb 2024</p>
             <p className="m-2">July 2024</p>

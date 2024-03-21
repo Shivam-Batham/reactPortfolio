@@ -29,8 +29,8 @@ function Header() {
   ];
 
   return (
-    <header className="">
-      <nav className="border-b-2 text-white grid grid-cols-12  border-sky-500 p-1 ">
+    <header className="text-white">
+      <nav className="border-b-2  grid grid-cols-12  border-sky-500 p-1 ">
         <div className="col-span-10  ">
           <ul className=" w-[100%] p-1 m-auto border-red-500 flex  flex-wrap flex-row justify-end  ">
             {navebarItems.map((item) => (
