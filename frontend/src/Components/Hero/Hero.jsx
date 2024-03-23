@@ -1,6 +1,5 @@
 import React from "react";
 import {} from "@heroicons/react/24/solid";
-import ProjectsContainer from "./../Projects/ProjectsContainer.jsx";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Link } from "react-router-dom";
@@ -313,7 +312,7 @@ function Hero() {
       </div>
 
       <div className={`p-2 ${bgDark} rounded-md sm:col-span-8`}>
-        {<ProjectsContainer />}
+        {<ProjectsCotainer />}
       </div>
       <div className= {`p-2 ${bgDark} rounded-md sm:col-span-4`}>
         {<Experience />}

@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from "react-router-dom";
 import quiz from "./quiz.png"
-function project() {
+function Project() {
   const [teckStack,setTeckState] = useState(["React", "Express","MongoDB","Node.Js"])
   const bgcolorDark = "bg-[#3d3a3a]"
   return (
@@ -83,4 +83,4 @@ function project() {
   )
 }
 
-export default project
+export default Project
