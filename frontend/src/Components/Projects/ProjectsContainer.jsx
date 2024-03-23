@@ -1,11 +1,10 @@
 import React from "react";
-import Project from "./Project.jsx";
+import Project from "./Project";
 function ProjectsContainer() {
-  
   return (
-    <>
+    
     <Project />
-    </>
+    
   );
 }
 

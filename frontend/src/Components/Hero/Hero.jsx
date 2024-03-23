@@ -1,6 +1,6 @@
 import React from "react";
 import {} from "@heroicons/react/24/solid";
-import ProjectsContainer from "../Projects/ProjectsContainer.jsx";
+import ProjectsContainer from "./../Projects/ProjectsContainer.jsx";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Link } from "react-router-dom";
