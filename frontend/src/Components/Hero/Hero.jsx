@@ -259,7 +259,7 @@ function Hero() {
       <div className=" sm:col-span-4">
         <div className={`bg-[#8d28df]  rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="font-bold text-2xl border-b text-amber-200">
-            Brief about me
+            About me :)
           </h1>
           <p>Hi there, Welcome to My Space.</p>
           <p>I'm <b>Shivam batham,</b>  A Full-Stack Engineer
@@ -270,7 +270,7 @@ function Hero() {
           </p>
         </div>
         <div className={`${bgDark} rounded-md sm:col-span-4 p-2 mb-2`}>
-          <h1 className="text-2xl font-bold border-b text-green-400">
+          <h1 className="text-2xl font-bold border-b ">
             My Tech Stacks
           </h1>
           <ul className="p-1 flex flex-wrap">
@@ -290,7 +290,7 @@ function Hero() {
                   Years of Experience
                 </h2>
                 <hr  />
-                <p className=" text-8xl font-bold rounded-md ">1</p>
+                <p className=" text-8xl font-bold rounded-md ">2<span className="text-xs font-normal p-0 m-0">months</span></p>
               </div>
               <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
                 <h2 className="text-xl font-bold text-start ml-2 ">
@@ -298,13 +298,13 @@ function Hero() {
                 </h2>
                 <hr />
                 <Link
-                  to="/"
+                  to="https://drive.google.com/file/d/1r5pQ81aimnGZFkAMb6qh0Moo0K6pOyUx/view?usp=sharing"
                   className="p-2  block border w-[70%] mx-auto my-2 rounded-md"
                 >
                   View
                 </Link>
-                <button className="p-2 rounded-md block border w-[70%] mx-auto my-2">
-                  Download
+                <button  className="text-violet-500 border border-violet-500 font-bold p-2 rounded-md block  w-[70%] mx-auto my-2">
+                  Hire me
                 </button>
               </div>
             </div>
