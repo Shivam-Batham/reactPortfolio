@@ -4,6 +4,7 @@ import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Link } from "react-router-dom";
 import GetInTouch from "../Contactme/GetInTouch";
+import ProjectsContainer from "../Projects/ProjectsContainer";
 
 function Hero() {
   const skills = [
@@ -312,7 +313,7 @@ function Hero() {
       </div>
 
       <div className={`p-2 ${bgDark} rounded-md sm:col-span-8`}>
-        {<ProjectsCotainer />}
+        {<ProjectsContainer />}
       </div>
       <div className= {`p-2 ${bgDark} rounded-md sm:col-span-4`}>
         {<Experience />}
