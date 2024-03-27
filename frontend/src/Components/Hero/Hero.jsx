@@ -255,7 +255,7 @@ function Hero() {
   const bgLight = "bg-[#ace0f9]"
   const bgDark = "bg-[#1b1a1a]"
   return (
-    <div className="  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2">
+    <div className=" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2">
       <div className=" sm:col-span-4">
         <div className={`bg-[#8d28df]  rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="font-bold text-2xl border-b text-amber-200">

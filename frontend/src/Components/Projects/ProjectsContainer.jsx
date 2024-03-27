@@ -7,8 +7,8 @@ function ProjectsContainer() {
   return (
     
     <div>
-      <div>
-        <h1>
+      <div className='text-white'>
+        <h1 className='pl-2'>
           Live Projects{" "}
           <span className="w-2 h-2 bg-green-400  rounded-full inline-block">
             {" "}
