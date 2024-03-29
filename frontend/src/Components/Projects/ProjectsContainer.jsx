@@ -17,7 +17,7 @@ function ProjectsContainer() {
         <hr />
 
         <div
-          className={`${bgcolorDark} mt-2  rounded-md  w-[95%] m-auto p-2`}
+          className={`${bgcolorDark} mt-2  rounded-md sm:w-[95%] w-[95%] m-auto p-2`}
 
         >
           <div className="flex place-content-between">

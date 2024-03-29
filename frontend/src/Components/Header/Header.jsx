@@ -36,7 +36,7 @@ function Header() {
             {navebarItems.map((item) => (
               <li className=" sm:ml-4 " key={item.name}>
                 <button
-                  className="hover:text-sky-300 p-2 "
+                  className="hover:text-violet-300 p-2 "
                   onClick={() => navigate(item.slug)}
                 >
                   {item.name}

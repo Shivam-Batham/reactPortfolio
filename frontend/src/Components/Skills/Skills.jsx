@@ -273,7 +273,7 @@ function Skills() {
   const bgDark = "bg-[#1b1a1a]"
   return (
     <div className='p-2'>
-      <div className={`${bgDark} text-white  rounded-md sm:col-span-4 p-2 mb-2`}>
+      <div className={`bg-[#8d28df] text-white  rounded-md sm:col-span-4 p-2 mb-2`}>
     <h1 className="text-2xl font-bold border-b ">
       My Tech Stacks
     </h1>
