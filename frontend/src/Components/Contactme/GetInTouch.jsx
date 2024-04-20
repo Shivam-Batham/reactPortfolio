@@ -14,10 +14,10 @@ function GetInTouch() {
         <a href="mailto:shivambatham2610@gmail.com">
           <img src={gmail} className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `} />
         </a>
-        <Link to="https://www.linkedin.com/in/shivam-batham/">
+        <Link to="https://github.com/Shivam-Batham">
           <img src={github}className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `}/>
         </Link>
-        <Link to="https://github.com/Shivam-Batham">
+        <Link to="https://www.linkedin.com/in/shivam-batham/">
           <img src={linkedin} className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `} />
         </Link>
 
