@@ -298,7 +298,7 @@ function Hero() {
                 </h2>
                 <hr />
                 <Link
-                  to="https://drive.google.com/file/d/1r5pQ81aimnGZFkAMb6qh0Moo0K6pOyUx/view?usp=sharing"
+                  to="https://drive.google.com/file/d/1olo7oKtmzeI5_yKMF7FB-9bhRcQj9O6f/view?usp=sharing"
                   className="p-2  block border w-[70%] mx-auto my-2 rounded-md"
                 >
                   View
