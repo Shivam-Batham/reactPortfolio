@@ -290,7 +290,7 @@ function Hero() {
                   Years of Experience
                 </h2>
                 <hr  />
-                <p className=" text-8xl font-bold rounded-md ">2<span className="text-xs font-normal p-0 m-0">months</span></p>
+                <p className=" text-8xl font-bold rounded-md ">6<span className="text-xs font-normal p-0 m-0">months</span></p>
               </div>
               <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
                 <h2 className="text-xl font-bold text-start ml-2 ">
