@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import {} from "@heroicons/react/24/solid";
 import Experience from "../Experience/Experience";
 import Education from "../Education/Education";
 import { Link } from "react-router-dom";
 import GetInTouch from "../Contactme/GetInTouch";
 import ProjectsContainer from "../Projects/ProjectsContainer";
+import { DarkmodeContext } from "../context/Darkmode";
 
 function Hero() {
   const skills = [
@@ -252,10 +253,10 @@ function Hero() {
     },
   ];
 
-  const bgLight = "bg-[#ace0f9]"
-  const bgDark = "bg-[#1b1a1a]"
+ 
+  const {darkmode, color} = useContext(DarkmodeContext)
   return (
-    <div className=" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2">
+    <div className={darkmode ?" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2": " p-2  backdrop-blur-2xl text-black  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2" }>
       <div className=" sm:col-span-4">
         <div className={`bg-[#8d28df]  rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="font-bold text-2xl border-b text-amber-200">
@@ -269,7 +270,7 @@ function Hero() {
             With expertise in building sleek and responsive user interfaces!
           </p>
         </div>
-        <div className={`${bgDark} rounded-md sm:col-span-4 p-2 mb-2`}>
+        <div className={darkmode ? `${color.dark} rounded-md sm:col-span-4 p-2 mb-2`: `${color.light} rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className="text-2xl font-bold border-b ">
             My Tech Stacks
           </h1>
@@ -285,14 +286,14 @@ function Hero() {
         <div>
           <div className=" sm:col-span-4 ">
             <div className="grid grid-cols-2 gap-2 ">
-              <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
+              <div className={darkmode ?`${color.dark} col-span-1 p-2  rounded-md text-center` :`${color.light} col-span-1 p-2  rounded-md text-center` }>
                 <h2 className="text-xl font-bold  ">
                   Years of Experience
                 </h2>
                 <hr  />
                 <p className=" text-8xl font-bold rounded-md ">6<span className="text-xs font-normal p-0 m-0">months</span></p>
               </div>
-              <div className={`${bgDark} col-span-1 p-2  rounded-md text-center`}>
+              <div className={darkmode ? `${color.dark} col-span-1 p-2  rounded-md text-center`:`${color.light} col-span-1 p-2  rounded-md text-center`  }>
                 <h2 className="text-xl font-bold text-start ml-2 ">
                   CV
                 </h2>
@@ -312,14 +313,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className={`p-2 ${bgDark} rounded-md sm:col-span-8`}>
+      <div className={darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-8`:`p-2 ${color.light} rounded-md sm:col-span-8`}>
         {<ProjectsContainer />}
       </div>
-      <div className= {`p-2 ${bgDark} rounded-md sm:col-span-4`}>
+      <div className= {darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-4` : `p-2 ${color.light} rounded-md sm:col-span-4`}>
         {<Experience />}
       </div>
-      <div className={`p-2 ${bgDark} rounded-md sm:col-span-4`}>{<Education />}</div>
-      <div className={`p-2 ${bgDark} rounded-md sm:col-span-4`}>{<GetInTouch/>}</div>
+      <div className={darkmode ? `p-2 ${color.dark}  rounded-md sm:col-span-4`: `p-2 ${color.light}  rounded-md sm:col-span-4`}>{<Education />}</div>
+      <div className={darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-4`:`p-2 ${color.light} rounded-md sm:col-span-4`}>{<GetInTouch/>}</div>
     </div>
   );
 }

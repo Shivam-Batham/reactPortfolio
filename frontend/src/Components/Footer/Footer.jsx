@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { DarkmodeContext } from "../context/Darkmode";
 
-function Footer() {
+const Footer = React.memo(function () {
+  const { darkmode } = useContext(DarkmodeContext);
   return (
-    <footer>
-
-    <div
-    className='border m-4'
+    <footer
+      className={darkmode ? "text-white" : "text-black"}
     >
-    </div>
-    <p className='text-white m-4'>
-      Developed by Shivam Batham
-    </p>
+      <div className={darkmode ? "text-white bg-black border m-4" : "text-black bg-white border-black"}></div>
+      <p className="m-4 font-bold">Developed by Shivam Batham</p>
     </footer>
-  )
-}
+  );
+});
 
-export default Footer
+export default Footer;
