@@ -50,12 +50,7 @@ function ProjectsContainer() {
                   Allows users to register themselves and enter a 5min quick mock quiz.
                 </p>{" "}
               </li>
-              <li>
-                <p>
-                  <span className="w-1 h-1 bg-violet-400   rounded-full inline-block m-1"></span>
-                  Allows users to mark answers of the questions, submit the quiz, providing a clear view of their result.
-                </p>{" "}
-              </li>
+               
               <li>
                 <p>
                   <span className="w-1 h-1 bg-violet-400   rounded-full inline-block m-1"></span>
