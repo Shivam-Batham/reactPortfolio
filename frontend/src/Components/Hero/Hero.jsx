@@ -257,22 +257,27 @@ function Hero() {
   const {darkmode, color} = useContext(DarkmodeContext)
   return (
     <div className={darkmode ?" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2": " p-2  backdrop-blur-2xl text-black  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2" }>
-      <div className=" sm:col-span-4">
-        <div className={`bg-[#8d28df]  rounded-md sm:col-span-4 p-2 mb-2`}>
-          <h1 className="font-bold text-2xl border-b text-amber-200">
-            About me :)
+      <div className=" sm:col-span-4 ">
+        <div className={darkmode ?` dark-theme rounded-md sm:col-span-4 p-2 mb-2 `:` light-theme  rounded-md sm:col-span-4 p-2 mb-2`}>
+          <h1 className=" hero-heading font-bold  text-2xl pb-2 border-b ">
+            {/* <span className="d">Shi</span>
+            <span className="o">vAm </span>
+            <span className="s">Bat</span>
+            <span className="b">hAm</span> */}
+            
+            <span className="exp md:text-5xl ">Shivam Batham
+              </span>
+            
           </h1>
-          <p>Hi there, Welcome to My Space.</p>
-          <p>I'm <b>Shivam batham,</b>  A Full-Stack Engineer
-            specialize in crafting dynamics immersive cross-plateform web
+          <p className="pt-2">Hi there, Welcome to My Space. A Full-Stack Engineer specialize in crafting dynamics immersive cross-plateform web
             applications.
          
             With expertise in building sleek and responsive user interfaces!
           </p>
         </div>
-        <div className={darkmode ? `${color.dark} rounded-md sm:col-span-4 p-2 mb-2`: `${color.light} rounded-md sm:col-span-4 p-2 mb-2`}>
-          <h1 className="text-2xl font-bold border-b ">
-            My Tech Stacks
+        <div className={darkmode ? `dark-theme rounded-md sm:col-span-4 p-2 mb-2`: `light-theme rounded-md sm:col-span-4 p-2 mb-2`}>
+          <h1 className="text-violet-500 text-2xl font-bold border-b heading">
+            Skills
           </h1>
           <ul className="p-1 flex flex-wrap">
             {skills.map((skill) => (
@@ -286,25 +291,28 @@ function Hero() {
         <div>
           <div className=" sm:col-span-4 ">
             <div className="grid grid-cols-2 gap-2 ">
-              <div className={darkmode ?`${color.dark} col-span-1 p-2  rounded-md text-center` :`${color.light} col-span-1 p-2  rounded-md text-center` }>
-                <h2 className="text-xl font-bold  ">
-                  Years of Experience
+              <div className={darkmode ?`dark-theme col-span-1 p-2  rounded-md ` :`light-theme col-span-1 p-2  rounded-md text-center` }>
+                <h2 className="heading text-violet-500 text-xl font-bold  ">
+                  Experience
                 </h2>
                 <hr  />
-                <p className=" text-8xl font-bold rounded-md ">6<span className="text-xs font-normal p-0 m-0">months</span></p>
+                <p className=" text-8xl font-bold rounded-md text-center ">
+                  <span className="exp">6</span>
+                  
+                  <span className="text-xs font-normal p-0 m-0">months</span></p>
               </div>
-              <div className={darkmode ? `${color.dark} col-span-1 p-2  rounded-md text-center`:`${color.light} col-span-1 p-2  rounded-md text-center`  }>
-                <h2 className="text-xl font-bold text-start ml-2 ">
+              <div className={darkmode ? `dark-theme col-span-1 p-2  rounded-md text-center`:`light-theme col-span-1 p-2  rounded-md text-center`  }>
+                <h2 className="text-violet-500 text-xl font-bold text-start ml-2 ">
                   CV
                 </h2>
                 <hr />
                 <Link
                   to="https://drive.google.com/file/d/1olo7oKtmzeI5_yKMF7FB-9bhRcQj9O6f/view?usp=sharing"
-                  className="p-2  block border w-[70%] mx-auto my-2 rounded-md"
+                  className="btn p-2  block border w-[70%] mx-auto my-2 rounded-md"
                 >
                   View
                 </Link>
-                <button  className="text-violet-500 border border-violet-500 font-bold p-2 rounded-md block  w-[70%] mx-auto my-2">
+                <button  className=" btn text-violet-500 border border-violet-500 font-bold p-2 rounded-md block  w-[70%] mx-auto my-2">
                   Hire me
                 </button>
               </div>
@@ -313,14 +321,14 @@ function Hero() {
         </div>
       </div>
 
-      <div className={darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-8`:`p-2 ${color.light} rounded-md sm:col-span-8`}>
+      <div className={darkmode ? `p-2 dark-theme  rounded-md sm:col-span-8`:`p-2 light-theme rounded-md sm:col-span-8`}>
         {<ProjectsContainer />}
       </div>
-      <div className= {darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-4` : `p-2 ${color.light} rounded-md sm:col-span-4`}>
+      <div className= {darkmode ? `p-2 dark-theme rounded-md sm:col-span-4` : `p-2 light-theme rounded-md sm:col-span-4`}>
         {<Experience />}
       </div>
-      <div className={darkmode ? `p-2 ${color.dark}  rounded-md sm:col-span-4`: `p-2 ${color.light}  rounded-md sm:col-span-4`}>{<Education />}</div>
-      <div className={darkmode ? `p-2 ${color.dark} rounded-md sm:col-span-4`:`p-2 ${color.light} rounded-md sm:col-span-4`}>{<GetInTouch/>}</div>
+      <div className={darkmode ? `p-2 dark-theme  rounded-md sm:col-span-4`: `p-2 light-theme  rounded-md sm:col-span-4`}>{<Education />}</div>
+      <div className={darkmode ? `p-2 dark-theme rounded-md sm:col-span-4`:`p-2 light-theme rounded-md sm:col-span-4`}>{<GetInTouch/>}</div>
     </div>
   );
 }

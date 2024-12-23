@@ -8,26 +8,26 @@ function Experience() {
   const {darkmode,color} = useContext(DarkmodeContext)
   return (
     <div className="">
-      <h2> My Experiences</h2>
+      <h2 class="heading text-violet-500"> Experiences</h2>
       <hr />
-      <div className={darkmode ? `${bgcolorDark} w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2` :  ` ${bgcolorLight} w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2`}>
+      <div className={darkmode ? `dark-theme w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2` :  ` light-theme w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2`}>
         <div className="text-xs">
             <p className="m-2">Feb 2024</p>
             <p className="m-2">May 2024</p>
         </div>
         <div>
             <h2 className="text-lg">SDE Intern</h2>
-            <p className="text-sm" >Trinity Infotech Solutions</p>
+            <p className="text-lg" >Trinity Infotech Solutions</p>
         </div>
       </div>
-      <div className={darkmode ? `${bgcolorDark} w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2` :  `${bgcolorLight} w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2`}>
+      <div className={darkmode ? `dark-theme w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2` :  `light-theme w-[96%] my-2 rounded-md  mx-auto flex p-2 gap-2`}>
         <div className="text-xs">
             <p className="m-2">July 2024</p>
             <p className="m-2">Present</p>
         </div>
         <div>
             <h2 className="text-lg">Software Intern</h2>
-            <p className="text-sm" >Valetx.in</p>
+            <p className="text-lg" >Valetx.in</p>
         </div>
       </div>
     </div>

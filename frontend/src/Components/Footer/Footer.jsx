@@ -5,10 +5,15 @@ const Footer = React.memo(function () {
   const { darkmode } = useContext(DarkmodeContext);
   return (
     <footer
-      className={darkmode ? "text-white" : "text-black"}
+      
     >
-      <div className={darkmode ? "text-white bg-black border m-4" : "text-black bg-white border-black"}></div>
-      <p className="m-4 font-bold">Developed by Shivam Batham</p>
+      {/* <div className={darkmode ? "text-white bg-black " : "text-black bg-white "}></div>
+      <p className="m-2 font-bold">
+        <span className="d">Developed </span>
+        <span className="o">By </span>
+        <span className="s">Shivam </span>
+        <span className="b">Batham </span>
+        </p> */}
     </footer>
   );
 });
