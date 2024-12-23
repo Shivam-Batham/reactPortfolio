@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    /* dark theme */
+    --background-: #090608;
+    --cont-background-: #222222;
+    --text-: #f6f3f4;
+    --primary-: #975979;
+    --secondary-:#5e3148;
+    --accent-:#8b4166;
+
+
+  /** light theme primary colors */
+  --Lbackground- : #f6fafe;
+  --Ltext-: #010b18;
+  --Lprimary-: #a66888;
+  --Lsecondary-: #cea1b8;
+  --Laccent- : #be7499;
+  
+  }
+
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -12,5 +33,68 @@ body {
   /* background-image: linear-gradient(120deg, #fff1eb 0%, #ace0f9 100%); */
   /* background-image: linear-gradient(120deg, #070606 0%, #101010 100%); */
   min-height: 100vh; 
+  font-family: "montserrat";
 }
 
+
+.hero-heading {
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  line-height: 1;
+  /* text-shadow: 1px 1px 5px var(--background-); */
+}
+
+.light-theme {
+  background-color: var(--Lbackground-);
+  color: var(--clr-Ltext-);
+  box-shadow: 1px 1px 4px var(--background-);
+  /* border: 1px solid var(--clr-text-); */
+  
+}
+
+
+.dark-theme {
+  background-color: var(--cont-background-);
+  color: var(--text-);
+  /* text-shadow: 1px 1px 1px var(--background-); */
+  box-shadow: 1px 1px 10px var(--background-);
+}
+
+.borderr {
+  border: 1px solid red;
+}
+
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.exp {
+  background: linear-gradient(
+    135deg,
+    #4285F4 0%, #4285F4 38%,   /* Blue occupies 0% to 33% */
+    #DB4437 38%, #DB4437 55%, /* Red occupies 33% to 33.3% */
+    #F4B400 50%, #F4B400 70%, /* Yellow occupies 33.3% to 66% */
+    #0F9D58 70%, #0F9D58 100%   /* Green occupies 66% to 100% */
+  );
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text; 
+
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.shadow {
+  box-shadow: none;
+  text-shadow: 1px 1px 2px var(--background-);
+  transition: all .5 ease;
+}
+
+.shadow:hover {
+  transform: scale(1.1);
+}

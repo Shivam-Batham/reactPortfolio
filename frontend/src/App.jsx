@@ -9,7 +9,7 @@ const App = React.memo(function() {
   return (
     <>
       <Header />
-      <div classname={darkmode ? "bg-black" : "bg-white"}>
+      <div>
       
           <Outlet  /> 
         

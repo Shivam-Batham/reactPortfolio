@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { DarkmodeContext } from "../context/Darkmode";
 
 function Skills() {
+  const {darkmode,color} = useContext(DarkmodeContext)
   const skills = [
     {
       name: "HTML",
@@ -269,18 +271,17 @@ function Skills() {
       },
   ];
   
-  const bgLight = "bg-[#ace0f9]"
-  const bgDark = "bg-[#1b1a1a]"
+  
   return (
     <div className='p-2'>
-      <div className={`bg-[#8d28df] text-white  rounded-md sm:col-span-4 p-2 mb-2`}>
-    <h1 className="text-2xl font-bold border-b ">
-      My Tech Stacks
+      <div className={darkmode?`dark-theme rounded-md sm:col-span-4 p-2 mb-2`:`light-theme rounded-md sm:col-span-4 p-2 mb-2`}>
+    <h1 className="heading text-violet-500 text-2xl font-semibold border-b ">
+      Skills
     </h1>
     <ul className="p-1 flex flex-wrap">
       {skills.map((skill) => (
-        <li className=" rounded-sm p-1 m-2   flex flex-col items-center">
-          <span className="w-10">{skill.svg}</span>
+        <li className=" rounded-sm p-1 m-2 flex flex-col items-center ">
+          <span className="w-10 ">{skill.svg}</span>
           <p>{skill.name}</p>
         </li>
       ))}

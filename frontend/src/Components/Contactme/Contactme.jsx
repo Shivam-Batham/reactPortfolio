@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkmodeContext } from "../context/Darkmode";
 
 function Contactme() {
-  const bgLight = "bg-[#ace0f9]";
-  const bgDark = "bg-[#1b1a1a]";
+  const {darkmode,color} = useContext(DarkmodeContext)
   return (
-    <div className="text-white p-4  bg-[#333131]   sm:w-[70%] w-[95%] rounded-md mx-auto m-2 grid sm:grid-cols-2 ">
+    <div className={darkmode?"dark-theme   p-4  sm:w-[70%] w-[95%] rounded-md mx-auto m-2 grid sm:grid-cols-2 ": "light-theme   p-4  sm:w-[70%] w-[95%] rounded-md mx-auto m-2 grid sm:grid-cols-2 "}>
       <div className="sm:grid-span-2 p-1">
-        <h1 className="text-2xl font-extrabold text-transparent bg-clip-text  bg-gradient-to-br  from-violet-500 to-indigo-400">
+        <h1 className="heading text-violet-600 text-2xl font-semibold text-transparent bg-clip-text ">
           Hire me
         </h1>
         <p>I'm a Software Developer with a strong ambition to create meaningful and positive impacts in people's lives.
@@ -24,7 +24,7 @@ function Contactme() {
         <input
           id="name"
           type="text"
-          className={`hover:cursor-pointer block sm:w-[100%] w-[100%] text-white bg-transparent  bg-[#333145] border-b-2 border-violet-500  outline-none`}
+          className={`hover:cursor-pointer block sm:w-[100%] w-[100%] bg-transparent border-b-2 border-blue-500  outline-none`}
         />
 
         <lable htmlFor="email" className="block">
@@ -34,7 +34,7 @@ function Contactme() {
           id="email"
           name="email"
           type="email"
-          className={`hover:cursor-pointer w-[100%] border-violet-500 bg-[#333145] block sm:w-[100%]  text-white bg-transparent border-b-2 outline-none`}
+          className={`hover:cursor-pointer w-[100%] border-red-500 bg-[#333145] block sm:w-[100%]    bg-transparent border-b-2 outline-none`}
         />
         <lable htmlFor="phone" className="block">
           Your phone
@@ -43,7 +43,7 @@ function Contactme() {
           id="phone"
           name="phone"
           type="text"
-          className={`hover:cursor-pointer w-[100%] border-violet-500 bg-[#333145] block sm:w-[100%]  text-white bg-transparent border-b-2 outline-none`}
+          className={`hover:cursor-pointer w-[100%] border-yellow-500 block sm:w-[100%]    bg-transparent border-b-2 outline-none`}
         />
 
         <lable className={`block `} htmlFor="message">
@@ -52,9 +52,9 @@ function Contactme() {
         <textarea
           id="message"
           maxLength={500}
-          className="sm:w-[100%] w-[100%] h-[150px] hover:cursor-pointer text-white bg-[#333145] border-b-2 border-violet-500 outline-none"
+          className={darkmode? "dark-theme sm:w-[100%] w-[100%] h-[150px]   border-b-2 border-green-500 outline-none" : "light-theme sm:w-[100%] w-[100%] h-[150px]   border-b-2 border-green-500 outline-none"}
         />
-        <button className={`block border rounded-md p-2 text-l`} type="submit">
+        <button className={`btn block border rounded-md p-2 text-l`} type="submit">
           Submit
         </button>
       </form>

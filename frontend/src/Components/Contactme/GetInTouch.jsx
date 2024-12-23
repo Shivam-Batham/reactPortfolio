@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkmodeContext } from "../context/Darkmode";
 import { Link } from "react-router-dom";
-import x from "./x.png";
-import linkedin from "./linkedin.png";
-import github from "./git.png";
-import gmail from "./gmail.png";
 function GetInTouch() {
-  const bgcolorDark = "bg-[#3d3a3a]"
+    const {darkmode,color} = useContext(DarkmodeContext)
+  
   return (
-  <div className={``}>
-      <h2>Get in touch</h2>
+  <div >
+      <h2 className={`heading text-violet-500`}>Connect</h2>
       <hr />
-      <div className={`flex justify-around pt-2 `}>
+      <p className="pt-4 mt-1 text-xs">
+          Got a Project in mind?
+        </p>
+        <h1 className="pl-2 mt-4 text-6xl ">Let's Talk</h1>
+      <div className={darkmode?`text-lg flex justify-around pt-5 flex-nowrap`: `text-lg flex justify-around pt-5 flex-nowrap`}>
+        
         <a href="mailto:shivambatham2610@gmail.com">
-          <img src={gmail} className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `} />
-        </a>
+        <i class='bx bxl-gmail exp text-2xl text-5xl mt-4 hover:scale-110'></i>        </a>
         <Link to="https://github.com/Shivam-Batham">
-          <img src={github}className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `}/>
-        </Link>
+        <i class='bx bxl-github text-5xl mt-4 shadow'></i>        </Link>
         <Link to="https://www.linkedin.com/in/shivam-batham/">
-          <img src={linkedin} className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `} />
+        <i class='bx bxl-linkedin-square text-blue-500 text-5xl mt-4 shadow'></i>
         </Link>
 
         <Link to="https://twitter.com/ShivamBathamm">
-          <img src={x}className={`rounded-full p-2 w-20 h-20 ${bgcolorDark} `} />
+        <i class='bx bxl-twitter text-blue-400 text-5xl mt-4 shadow rounded-full'></i>
         </Link>
       </div>
     </div>
