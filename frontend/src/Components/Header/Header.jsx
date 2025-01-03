@@ -35,7 +35,7 @@ const Header = React.memo( function() {
  
   return (
     <header className={darkmode? "" : ""} >
-      <nav className=" grid grid-cols-12 mt-1 ">
+      <nav className=" grid grid-cols-12 mt-1 pt-2 ">
         <div className="col-span-10  ">
           <ul className="head w-[100%]  m-auto flex flex-wrap flex-row justify-end  ">
             {navebarItems.map((item) => (

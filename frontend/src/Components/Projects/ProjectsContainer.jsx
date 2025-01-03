@@ -71,7 +71,7 @@ function ProjectsContainer() {
                  
                 Tech Stack - 
                 </span>
-                <ul className="inline flex gap-x-4 font-bold" >
+                <ul className="flex flex-wrap gap-x-4 font-bold" >
                   {/* {teckStack.map((i)=><li className="uppercase inline m-2">{i}</li>)} */}
                   <li className="d">React</li>
                   <li className="o">Express</li>
