@@ -256,7 +256,7 @@ function Hero() {
  
   const {darkmode, color} = useContext(DarkmodeContext)
   return (
-    <div className={darkmode ?" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2": " p-2  backdrop-blur-2xl text-black  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto my-2" }>
+    <div className={darkmode ?" p-2  backdrop-blur-2xl text-white  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto": " p-2  backdrop-blur-2xl text-black  grid gap-2 sm:grid-cols-12 sm:w-[90%] m-auto" }>
       <div className=" sm:col-span-4 ">
         <div className={darkmode ?` dark-theme rounded-md sm:col-span-4 p-2 mb-2 `:` light-theme  rounded-md sm:col-span-4 p-2 mb-2`}>
           <h1 className=" hero-heading font-bold  text-2xl pb-2 border-b ">
@@ -297,9 +297,9 @@ function Hero() {
                 </h2>
                 <hr  />
                 <p className=" text-8xl font-bold rounded-md text-center ">
-                  <span className="exp">1</span>
+                  <span className="exp">11</span>
                   
-                  <span className="text-xs font-normal p-0 m-0">yr</span></p>
+                  <span className="text-xs font-normal p-0 m-0">months</span></p>
               </div>
               <div className={darkmode ? `dark-theme col-span-1 p-2  rounded-md text-center`:`light-theme col-span-1 p-2  rounded-md text-center`  }>
                 <h2 className="text-violet-500 text-xl font-bold text-start ml-2 ">
