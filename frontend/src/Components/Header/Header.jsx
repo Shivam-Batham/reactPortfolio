@@ -66,11 +66,11 @@ const Header = React.memo( function() {
           <ul className="head w-[100%]  m-auto flex justify-evenly  ">
             <li><a href="/">
             <i class='bx bxs-home-circle text-2xl mobile-nav'></i></a></li>
-            <li><a href="skills">
+            <li><a href="/skills">
             <i class='bx bxs-cog text-2xl mobile-nav'></i></a></li>
-            <li><a href="projects">
+            <li><a href="/projects">
             <i class='bx bxs-briefcase text-2xl mobile-nav'></i></a></li>
-            <li><a href="contactme">
+            <li><a href="/contactme">
             <i class='bx bxs-contact text-2xl mobile-nav' ></i></a></li>
           </ul>
         </div>
