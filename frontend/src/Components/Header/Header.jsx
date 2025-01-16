@@ -8,6 +8,7 @@ import "./Header.css";
 const Header = React.memo( function() {
   const navigate = useNavigate();
   const [dark, setDark] = useState(false);
+  const router = useNavigate();
   const navebarItems = [
     {
       name: "Home",
@@ -61,16 +62,17 @@ const Header = React.memo( function() {
           )}
         </div>
       </nav>
+
       <nav className="grid grid-cols-12 mb-3">
         <div className="sm:hidden xxs:flex col-span-10 ">
           <ul className="head w-[100%]  m-auto flex justify-evenly  ">
-            <li><a href="/">
+            <li><a  onClick={()=>router("/")}>
             <i class='bx bxs-home-circle text-2xl mobile-nav'></i></a></li>
-            <li><a href="/skills">
+            <li><a onClick={()=>router("/skills")} >
             <i class='bx bxs-cog text-2xl mobile-nav'></i></a></li>
-            <li><a href="/projects">
+            <li><a onClick={()=>router("/projects")} >
             <i class='bx bxs-briefcase text-2xl mobile-nav'></i></a></li>
-            <li><a href="/contactme">
+            <li><a onClick={()=>router("/contactme")}>
             <i class='bx bxs-contact text-2xl mobile-nav' ></i></a></li>
           </ul>
         </div>
