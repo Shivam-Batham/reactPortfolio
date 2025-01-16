@@ -15,13 +15,14 @@ const ProjectsContainer = React.lazy(() =>
 const App = React.lazy(() => import("./App"));
 const Contactme = React.lazy(() => import("./Components/Contactme/Contactme"));
 const Skills = React.lazy(() => import("./Components/Skills/Skills"));
+import Loader from "./Components/Loader/PreLoader.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
       path="/"
       element={
-        <Suspense fallback={"Loading...."}>
+        <Suspense fallback={<Loader/>}>
           <App />
         </Suspense>
       }
@@ -29,7 +30,7 @@ const router = createBrowserRouter(
       <Route
         path=""
         element={
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<Loader/>}>
             <Hero />
           </Suspense>
         }
@@ -37,7 +38,7 @@ const router = createBrowserRouter(
       <Route
         path="contactme"
         element={
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<Loader/>}>
             <Contactme />
           </Suspense>
         }
@@ -45,7 +46,7 @@ const router = createBrowserRouter(
       <Route
         path="skills"
         element={
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<Loader/>}>
             <Skills />
           </Suspense>
         }
@@ -53,7 +54,7 @@ const router = createBrowserRouter(
       <Route
         path="projects"
         element={
-          <Suspense fallback={"Loading..."}>
+          <Suspense fallback={<Loader/>}>
             <ProjectsContainer />
           </Suspense>
         }
