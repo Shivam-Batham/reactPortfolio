@@ -47,9 +47,18 @@ nav{
     font-size: .75rem;
     border-radius: 3px;
     padding-inline: 16px;
+    transition: all .3s ease;
 }
 
 .nav-btn:hover {
+    transform: translateY(-3px);
+}
+
+.mobile-nav {
+    transition: all .3s ease;
+}
+
+.mobile-nav:hover {
     transform: translateY(-3px);
 }
 
